@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>placement training cell</title>
+   <!--<link rel="stylesheet" type="text/css" href="p2.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script type="text/javascript">
+    function togglemenu(){
+        document.getElementById('sidebar').classList.toggle('active');
+        }
+    </script>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;
+    
+}
+
+#sidebar{
+    position: fixed;
+    width: 30%;
+    height:100%;
+    left:-30%;
+    background-color:black;
+    }
+#sidebar{z-index: 1}
+#sidebar li{
+    color: black;
+    font-size: 30px;
+    padding:30px;
+    border-bottom:1px solid gray;
+    text-align:center;
+}
+.toggle-btn{
+    position:absolute;
+    left:105%;
+    top:15px;
+}
+.toggle-btn span{
+    display:block;
+    background-color:black;
+    width:30px;
+    height:5px;
+    margin:3px;
+}
+#sidebar.active{
+    left: 0;
+}
+h1{
+    color:black ;
+    text-align: left;
+    font-size: 400%;
+}
+h2{
+    color: black;
+}
+ /* styling search bar */
+ .search input[type=text]{
+    width:300px;
+    height:25px;
+    border-radius:25px;
+    border: none;
+
+}
+  
+.search{
+    float:right;
+    margin:7px;
+    appearance: top;
+
+}
+  
+.search button{
+    background-color: #0074D9;
+    color: #f2f2f2;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+} 
+header{
+    background-color: lightseagreen;
+}
+#navlist {
+    background-color: lightseagreen;
+    position: absolute;
+    width: 100%;
+}
+  
+/* styling navlist anchor element */
+#navlist a {
+    float:left;
+    display: block;
+    color: black;
+    position: relative;
+    left:60%;
+    padding: 12px;
+    font-size: 17px;
+}
+.navlist-right{
+    float:right;
+}
+
+/* hover effect of navlist anchor element */
+#navlist a:hover {
+    background-color: #ddd;
+    color: black;
+}
+h3{
+    font-size: 400%;
+    color: orangered;
+    text-align: left;
+    animation-name:slide;
+    animation-duration: 5s;
+}
+@keyframes slide{
+    0%
+    {
+        opacity:0;
+        transform: translateX(-200%);
+    }
+    100%
+    {
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+.image-banner{
+    position: relative;
+     text-align: center;
+}
+.banner-description{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    width: 500px;
+}
+hr{
+    margin: 1rem 0;
+    color: brown;
+}
+details{
+    padding: 0 1rem;
+}
+.first{
+    border: 1px solid green;
+    font-size: 30px;
+}
+.second{
+    border: 1px solid green;
+    font-size: 30px;
+}
+.third{
+    border: 1px solid green;
+    font-size: 30px;
+}
+.fourth{
+    border: 1px solid green;
+    font-size: 30px;
+}
+.social-med{
+    background-color: darkblue;
+    color: white;
+    padding: 100px 300px ;
+    font-size: 20px;
+}
+.cc{
+    color: white;
+    font-size: 20px;
+}
+.ft{
+    color: white;
+    padding: 20px 0px;
+    font-size: 25px;
+}
+a{
+    color: white;
+}
+summary{
+    color:maroon;
+}
+.imgcolumn{
+    float: left;
+    width:25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.imgrow{
+    box-sizing: border-box;
+}
+
+.oppurt{
+    
+    font-size: 35px;
+    text-align:left;
+    color: black;
+    }
+    .border{
+  width: 400px;
+  height: 5px;
+  background: black;
+  margin:left;
+  }
+  
+ </style>
+    </head>
+<body  bgcolor="white">
+    <!-- header-->
+    
+    <header>
+         <h1><img  src="logo.jpg"
+            alt="plc"
+            align="center"
+             width="70"
+              height="70"> Quient</h1>
+              <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Training and placement cell</h2>
+            <!-- Navbar items -->
+    <div id="navlist">
+        <a href="cnt2.html">Need help?contact us</a>
+        <a href="#">Login</a>
+        <div class="search">
+               <form action="#">
+                    <input type="text"
+                        placeholder=" Search Courses"
+                        name="search">
+                    <button>
+                        <i class="fa fa-search"
+                            style="font-size: 18px;">
+                        </i>
+                    </button>
+                </form>
+            </div>
+            </div>
+            <br><br><!--menu bar-->
+            <div id="sidebar" onclick="togglemenu()">
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="abt2.html">About us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="test.html">Testimonlials</a></li>
+                        <li><a href="cnt2.html">contact us</a></li>
+                    </ul>
+                    </div>
+        </header>
+        
+     <h3> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000+ students trained across 110+ colleges!</h3>
+<hr>
+    <div class="image-banner">
+        <img width="100%" height="543" src="teaching.png">
+        <div class="banner-description">
+       </div>
+     </div><br><br>
+     <p class="oppurt">BUILD YOUR CAREER IN:</p>
+     <div class="border"></div>
+     <div class="imgrow">
+         <div class="imgcolumn">
+          <img src="infosys.jfif"  alt="infosys" style="width: 100%">
+    </div>
+      <div class="imgcolumn">
+          <img src="tata.jfif" alt="tcs style="width: 100%">
+          </div>
+          <div class="imgcolumn">
+            <img src="accenture.jfif" alt="accenture" style="width: 100%">
+        </div>
+        <div class="imgcolumn">
+            <img src="cohnizant.jfif" alt="accenture" style="width: 100%">
+        </div>
+      </div>
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+     <details class="first">
+         <summary>VISION OF THE COMPANY</summary>
+         <div class="detail-content">
+            <img src="img8.jfif"  width="150" height="150" align="right"><br><br>
+             <p>Quient training is an enthusiastic group intended
+                  to train students in colleges that are denied the
+                  privilege of Placement training, A group of
+                   Enthusiasts now have a vision of training students 
+                   that don’t have access to placement training that can
+                help them get placed, and thereby build their future</p>   
+               
+         </div>
+     </details>
+     <br>
+     <details class="second">
+         <summary>WHY IS PLACEMENT TRAINING IMPORTANT: </summary>
+         <div class="details-content">
+            <img src="img9.jfif"  width="150" height="150" align="right">
+             <p>Placement training plays a major role in shaping up the career goals of students. It is
+                the dream of every engineering student to get placed in a top organization visiting
+                their campus for recruitment. Keeping this key aspect into consideration, it is realized
+                that training is important for engineering students to enhance their employability skills
+                and achieve good placement in various Industries<br>
+                At present, the competition for employment is increasing every day and placement has
+                become a challenging task. Training students and equipping them with life skills has
+                become an important responsibility of the institution. Along with technical expertise,
+                the development of a holistic personality is also necessary </p>
+         </div>
+     </details>
+     <br>
+     <details class="third">
+     <summary>OBJECTIVES:</summary>
+     <div class="details-content">
+        <img src="img5.png"  width="150" height="150" align="right">
+         <p>The prime objective of the Training Cell is<br>
+            ● To look for 100% employment for all students.<br>
+            ● To recognize the core competencies of the students.<br>
+            ● To train the students to meet the expectations of the industry through our Career
+            Development Programmes.<br>
+            ● To build confidence in students and develop the right attitude in them and<br>
+            ● enhance their communication skills.</p>
+            
+     </div>
+     </details>
+     <br>
+     <details class="fourth">
+         <summary>TRAINING ACTIVITIES</summary>
+         <DIV class="details-content">
+            <img src="img10.jfif"  width="150" height="150" align="right">
+             <p>
+                ● Create awareness about “career planning" and "career mapping" among the
+                students.<br>
+                ● Equip the student with life skills.<br>
+                ● Train the students on “Personality development".<br>
+                ● Organize Various Training Programmes to train the students in the areas of
+                Quantitative Aptitude, Logical Reasoning and Verbal reasoning through
+                the reputed external training organizations and in-house trainers.<br>
+                ● Train the students through Mock Interviews to perform well in the professional
+                interviews as per the expectations of the corporate world.<br>
+                ● Train the students on group discussion techniques.<br>
+                ● Conduct online tests and written aptitude tests.</p>
+         </DIV>
+     </details>
+    
+     <footer class="social-med">
+          <a  class="cc" href="click here" >contact us: &#10145; </a>
+         <a href="mailto:aboutquient@gmail.com"><img width=38 height=38 src="m2.png"></a>
+         &nbsp;&nbsp; <a href="https://www.whatsapp.com/?lang=en"><img width=35 height=35 src="whatsap.jfif"></a>
+<br><br>
+         <a  class="cc" href="click here" >Follow us on: &#10145; </a>
+         <a href="https://www.facebook.com/unicefindia/videos/thank-you-corona-warriors/288821552226660/"><img width=35 height=35 src="f2.jfif"></a>
+        &nbsp;&nbsp; <a href="https://mobile.twitter.com/takeiteasyengi3?lang=en"><img width=35 height=35 src="tt2.jfif"></a>
+        &nbsp;&nbsp; <a href="https://instagram.com/takeiteasyengineers?utm_medium=copy_link"><img width=35 height=35 src="i2.jfif"></a></h7>
+        &nbsp;&nbsp; <a href="https://www.linkedin.com/in/shwetha-kilary-b40743211"><img width=35 height=35 src="linkdin.jfif"></a>
+       <br><br> <p>&copy; Copyright 2021 by Quient Trainings Pvt Ltd</p><br>
+       <a class="ft"  href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="ft"  href="abt2.html">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="ft" href="test.html">Testimonials</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="ft" href="feedback.html">Feedback</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a class="ft" href="cnt2.html">contact us</a>
+           
+    </footer>
+     </body>
+</html>
