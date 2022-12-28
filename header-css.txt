@@ -1,0 +1,12 @@
+h1{
+            color:black ;
+           text-align: left;
+            font-size: 400%;
+            background-color: lightseagreen;
+          }
+        h2{
+            color: black;
+        }
+        header{
+            background-color: lightseagreen;
+      }
